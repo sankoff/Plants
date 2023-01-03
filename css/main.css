@@ -319,6 +319,7 @@ a {
     height: 282px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
+    padding-top: 3px;
 }
 
 .price_item {
@@ -356,6 +357,7 @@ a {
     justify-content: center;
     border: 2px solid #E06733;
     border-radius: 5px;
+    padding-left: 3px;
 }
 
 .text_call_us h3 {
