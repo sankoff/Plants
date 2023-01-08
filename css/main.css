@@ -10,9 +10,14 @@ font-family: 'Inter', sans-serif;
 * {
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
     color: #010201;
+    cursor: pointer;
+}
+
+button {
     cursor: pointer;
 }
 
@@ -31,8 +36,9 @@ body {
 }
 
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
+    position:absolute;
+    width:100%;
+    /* margin: 0 auto; */
 }
 
 .transition {
@@ -106,7 +112,8 @@ body {
 
 .welcome {
     display: flex;
-    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
     background: #EDF2EC;
 }
 
@@ -177,9 +184,6 @@ body {
     background: #E06733;
     border: 2px solid #E06733;
     border-radius: 10px;
-}
-
-.text button:hover a {
     color: #fff;
 }
 
@@ -222,6 +226,8 @@ body {
 /* Service */
 
 .service {
+    width: 100%;
+    margin: 0 auto;
     background: #EDF2EC;
     padding-top: 43px;
     padding-bottom: 67px;
@@ -229,11 +235,11 @@ body {
 
 .services_content {
     display: flex;
-    justify-content: space-between;
-    width: 1044px;
+    margin: 0 auto;
+    justify-content: flex-start;
+    width: 1222px;
     height: 94px;
     align-items: center;
-    margin-left: 110px;
     margin-bottom: 86px;
 }
 
@@ -247,6 +253,7 @@ body {
     font-size: 40px;
     line-height: 52px;
     margin: 0;
+    margin-right: 142px;
 }
 
 .services_btns {
@@ -267,20 +274,13 @@ body {
     justify-content: center;
     border: 2px solid #E06733;
     border-radius: 5px;
+    color: #E06733;
 }
 
 .services_btns button:hover {
     background: #E06733;
     border: 1px solid #E06733;
     border-radius: 5px;
-}
-
-.services_btns button a {
-    color: #E06733;
-}
-
-
-.services_btns button:hover a {
     color: #fff;
 }
 
@@ -324,7 +324,8 @@ body {
 
 .prices_block {
     display: block;
-    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
     background: #FFF;
 }
 
@@ -427,22 +428,15 @@ body {
     border: 1px solid #E06733;
     border-radius: 5px;
     padding-left: 3px;
+    color: #E06733;
 }
 
 .text_call_us button:hover {
     background: #E06733;
     border: 1px solid #E06733;
     border-radius: 5px;
-}
-
-.text_call_us button:hover a {
     color: #fff;
 }
-
-.text_call_us button a {
-    color: #E06733;
-}
-    
 
 .text_call_us h3 {
     width: 452px;
@@ -471,8 +465,8 @@ body {
 /* Contacts */
 
 .contacts {
-    width: 1440px;
     margin: 0 auto;
+    width: 100%;
     padding-top: 53px;
     background: #EDF2EC;
 }
@@ -542,7 +536,8 @@ body {
 /* Footer */
 
 .footer {
-    width: 1440px;
+    margin: 0 auto;
+    width: 100%;
     height: 130px;
 }
 
@@ -585,8 +580,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
 
 .social-list img {
     height: 32px;
