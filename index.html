@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/header/logo_vector.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./scripts/index.js"></script>
     <title>Plants</title>
 </head>
 
@@ -20,12 +21,14 @@
                     <img src="./img/header/logo_vector.svg" alt="Plants">
                     <span>Plants</span>
                 </div>
-                <nav class="nav">
-                    <a href="index.html">Home</a>
-                    <a href="#about">About us</a>
-                    <a href="#service">Service</a>
-                    <a href="#price">Price</a>
-                    <a href="#contacts">Contacts</a>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#prices">Price</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -39,7 +42,7 @@
                         <h1>We grow <span>plants</span> and give you oxygen</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the industry's standard dummy text ever since the 1500s.</p>
-                        <button>LEARN MORE</button>
+                        <button class="transition"><a href="#">LEARN MORE</a></button>
                     </div>
                 </div>
             </section>
@@ -61,9 +64,9 @@
                 <div class="services_content">
                     <h2>Service and our projects</h2>
                     <div class="services_btns">
-                        <button>Gardens</button>
-                        <button>Lawn</button>
-                        <button>Planting</button>
+                        <button class="transition"><a href="#">Gardens</a></button>
+                        <button class="transition"><a href="#">Lawn</a></button>
+                        <button class="transition"><a href="#">Planting</a></button>
                     </div>
                 </div>
                 <div class="services">
@@ -123,7 +126,7 @@
                     </div>
                     <div class="text_call_us">
                         <h3>Our best <span>gardeners</span> are ready to help you</h3>
-                        <button>Contact us</button>
+                        <button class="transition"><a href="#">Contact us</a></button>
                         <div class="leafs">
                             <img src="./img/prices/leafs.png" alt="leafs">
                         </div>
@@ -135,7 +138,7 @@
                     <img src="./img/contact_us/contact_woman.png" alt="contact_woman" class="contact_woman">
                     <h2>Contact us</h2>
                     <div class="choise_city">
-                        <div value="City">City</div>
+                        <div>City</div>
                         <div class="choise_city__circle">
                             <div class="choise_city__arrow"></div>
                         </div>
@@ -148,19 +151,20 @@
                 <div class="footer-data">
                     <p>©</p>
                     <p>2022</p>
-                    <p>github</p>
+                    <p><a href="https://github.com/sankoff">github</a></p>
                 </div>
-                <p>Rolling Scopes School</p>
-                <div class="social-list">
-                    <a href="https://www.instagram.com/sankoff84/"><img src="./img/footer/inst.svg" alt="inst"></a>
-                    <img src="./img/footer/fb.svg" alt="fb">
-                    <img src="./img/footer/tw.svg" alt="tw">
-                    <img src="./img/footer/pinterest.svg" alt="pinterest">
+                <p><a href="https://rs.school/js-stage0/">Rolling Scopes School</a></p>
+                <div>
+                    <ul class="social-list">
+                        <li><a href="https://www.instagram.com/sankoff84/"><img src="./img/footer/inst.svg" alt="inst"></a></li>
+                        <li><img src="./img/footer/fb.svg" alt="fb"></li>
+                        <li><img src="./img/footer/tw.svg" alt="tw"></li>
+                        <li><img src="./img/footer/pinterest.svg" alt="pinterest"></li>
+                    </ul>  
                 </div>
             </div>
         </footer>
     </div>
 </body>
-<link rel="stylesheet" href="./scripts/script.js">
 
 </html>

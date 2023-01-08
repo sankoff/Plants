@@ -10,6 +10,15 @@ font-family: 'Inter', sans-serif;
 * {
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: #010201;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #010201;
+}
   
 html {
     scroll-behavior: smooth;
@@ -21,13 +30,13 @@ body {
     background: #ffffff;
 }
 
-a { 
-    text-decoration: none;
-} 
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.transition {
+    transition: 1s;
 }
 
 /* Header */
@@ -50,10 +59,10 @@ a {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    min-width: 1222px;
+    min-width: 1220px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 42px;
+    padding-top: 58px;
 }
 
 .logo {
@@ -73,18 +82,22 @@ a {
     display: flex;
     justify-content: space-between;
     min-width: 452px;
+    height: 50px;
     font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
-.nav a {
+.nav li a {
     color: #010201;
 }
 
-.nav a:first-child {
+.nav li:first-child a {
     color: #E06733;
 }
 
@@ -155,9 +168,19 @@ a {
     line-height: 20px;
     align-items: center;
     justify-content: center;
-    color: #000000;
+    color: #000;
     border: 2px solid #E06733;
     border-radius: 10px;
+}
+
+.text button:hover {
+    background: #E06733;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+}
+
+.text button:hover a {
+    color: #fff;
 }
 
 /* About */
@@ -239,12 +262,26 @@ a {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: #E06733;
     margin-right: 38px;
     align-items: center;
     justify-content: center;
     border: 2px solid #E06733;
     border-radius: 5px;
+}
+
+.services_btns button:hover {
+    background: #E06733;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+}
+
+.services_btns button a {
+    color: #E06733;
+}
+
+
+.services_btns button:hover a {
+    color: #fff;
 }
 
 .services {
@@ -317,7 +354,7 @@ a {
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
-    color: #000000;
+    color: #000;
 }
 
 .prices_item {
@@ -351,7 +388,7 @@ a {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    color: #000000;
+    color: #000;
 }
 
 .price_item_circle {
@@ -384,7 +421,6 @@ a {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: #E06733;
     margin-bottom: 36px;
     align-items: center;
     justify-content: center;
@@ -392,6 +428,21 @@ a {
     border-radius: 5px;
     padding-left: 3px;
 }
+
+.text_call_us button:hover {
+    background: #E06733;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+}
+
+.text_call_us button:hover a {
+    color: #fff;
+}
+
+.text_call_us button a {
+    color: #E06733;
+}
+    
 
 .text_call_us h3 {
     width: 452px;
@@ -529,8 +580,13 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 188px;
-    height: 50px;
+    height: 54px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
+
 
 .social-list img {
     height: 32px;
